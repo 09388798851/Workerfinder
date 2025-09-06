@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Applications</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="applications.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Worker</small></div>
+    <button class="btn" onclick="window.location.href='dashboard.html'"><i data-lucide="home"></i><span>Dashboard</span></button>
+    <button class="btn" onclick="window.location.href='findjobs.html'"><i data-lucide="map-pin"></i><span>Find Jobs</span></button>
+    <button class="btn active"><i data-lucide="file-text"></i><span>Applications</span></button>
+    <button class="btn" onclick="window.location.href='messages.html'"><i data-lucide="message-circle"></i><span>Messages</span></button>
+    <button class="btn" onclick="window.location.href='settings.html'"><i data-lucide="settings"></i><span>Settings</span></button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel" id="section-applications">
+      <h2>My Applications</h2>
+      <div class="applications" id="application-list">
+        <!-- Applications will be loaded here by applications.js -->
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="applications.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

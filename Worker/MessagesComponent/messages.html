@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Messages</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="messages.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Worker</small></div>
+    <a href="dashboard.html" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="findjob.html" class="btn"><i data-lucide="map-pin"></i><span>Find Jobs</span></a>
+    <a href="application.html" class="btn"><i data-lucide="file-text"></i><span>Applications</span></a>
+    <a href="messages.html" class="btn active"><i data-lucide="message-circle"></i><span>Messages</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Messages</h2>
+      <div class="messages">
+        <!-- Chat List -->
+        <div class="chat-list">
+          <div class="chat-item" onclick="openChat('Employer A')">Employer A</div>
+          <div class="chat-item" onclick="openChat('Employer B')">Employer B</div>
+        </div>
+        <!-- Chat Window -->
+        <div class="chat-window">
+          <div class="chat-header" id="chat-header">Select a conversation</div>
+          <div class="chat-body" id="chat-body"></div>
+          <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type a message..." disabled>
+            <button onclick="sendMessage()" disabled id="chat-send">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="messages.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

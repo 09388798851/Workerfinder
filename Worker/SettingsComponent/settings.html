@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Settings</title>
+
+  <!-- External CSS (only for settings) -->
+  <link rel="stylesheet" href="settings.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Worker</small></div>
+    <button class="btn" onclick="window.location.href='dashboard.html'">
+      <i data-lucide="home"></i><span>Dashboard</span>
+    </button>
+    <button class="btn" onclick="window.location.href='findjobs.html'">
+      <i data-lucide="map-pin"></i><span>Find Jobs</span>
+    </button>
+    <button class="btn" onclick="window.location.href='applications.html'">
+      <i data-lucide="file-text"></i><span>Applications</span>
+    </button>
+    <button class="btn" onclick="window.location.href='messages.html'">
+      <i data-lucide="message-circle"></i><span>Messages</span>
+    </button>
+    <button class="btn active">
+      <i data-lucide="settings"></i><span>Settings</span>
+    </button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel section">
+      <h2>Settings</h2>
+      <form class="settings-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" value="Juan Dela Cruz">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" value="juan@email.com">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" value="********">
+        
+        <button type="button" class="save">Save Changes</button>
+        <button type="button" class="logout" onclick="logout()">Logout</button>
+      </form>
+    </div>
+  </main>
+</div>
+
+<!-- External JS (only for settings) -->
+<script src="settings.js"></script>
+
+<!-- Load icons -->
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

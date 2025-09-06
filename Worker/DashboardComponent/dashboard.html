@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Dashboard</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Worker</small></div>
+    <button class="btn active"><i data-lucide="home"></i><span>Dashboard</span></button>
+    <a href="findjob.html" class="btn"><i data-lucide="map-pin"></i><span>Find Jobs</span></a>
+    <a href="application.html" class="btn"><i data-lucide="file-text"></i><span>Applications</span></a>
+    <a href="messages.html" class="btn"><i data-lucide="message-circle"></i><span>Messages</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Dashboard Section -->
+    <div class="panel section">
+      <h2>Welcome, Worker!</h2>
+      <p>You have <b>5 job applications</b> in progress.</p>
+      <p>2 new job postings are available near your area.</p>
+      <p>Check your messages for updates from employers.</p>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="dashboard.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

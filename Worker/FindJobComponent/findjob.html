@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Find Jobs</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="findjob.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Worker</small></div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="findjob.html" class="active">Find Jobs</a>
+      <a href="application.html">Applications</a>
+      <a href="messages.html">Messages</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel section">
+      <h2>Find Jobs</h2>
+      <div id="map" class="map"></div>
+      <div class="job-list">
+        <div class="job-card"><h3>Construction Worker — Virac</h3><button>Apply</button></div>
+        <div class="job-card"><h3>Farm Helper — Bato</h3><button>Apply</button></div>
+        <div class="job-card"><h3>Electrician — San Andres</h3><button>Apply</button></div>
+        <div class="job-card"><h3>Housekeeper — Pandan</h3><button>Apply</button></div>
+        <div class="job-card"><h3>Driver — Baras</h3><button>Apply</button></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- External JS -->
+<script src="findjob.js"></script>
+</body>
+</html>
