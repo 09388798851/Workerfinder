@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Post a Job</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="postjob.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Employer</small></div>
+    <a href="employer.html" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="postjob.html" class="btn active"><i data-lucide="plus-circle"></i><span>Post a Job</span></a>
+    <a href="applicants.html" class="btn"><i data-lucide="users"></i><span>View Applicants</span></a>
+    <a href="map.html" class="btn"><i data-lucide="map-pin"></i><span>GIS Map</span></a>
+    <a href="messages.html" class="btn"><i data-lucide="message-circle"></i><span>Messages</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Post a Job</h2>
+      <form id="jobForm" class="job-form">
+        <label for="title">Job Title</label>
+        <input type="text" id="title" placeholder="e.g. Carpenter" required>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g. Virac, Catanduanes" required>
+
+        <label for="desc">Description</label>
+        <textarea id="desc" rows="5" placeholder="Job details..." required></textarea>
+
+        <button type="submit">Post Job</button>
+      </form>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="postjob.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

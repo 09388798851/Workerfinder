@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — View Applicants</title>
+  <link rel="stylesheet" href="viewapplicants.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br>
+      <small style="color:var(--muted);font-size:18px;">Employer</small>
+    </div>
+    <a href="employerdashboard.html" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="postjob.html" class="btn"><i data-lucide="plus-circle"></i><span>Post a Job</span></a>
+    <button class="btn active"><i data-lucide="users"></i><span>View Applicants</span></button>
+    <a href="gis.html" class="btn"><i data-lucide="map-pin"></i><span>GIS Map</span></a>
+    <a href="messages.html" class="btn"><i data-lucide="message-circle"></i><span>Messages</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2 style="font-size:28px;margin-top:0;">View Applicants</h2>
+      <div class="applicant-list" id="applicant-list">
+        <!-- Applicants will be loaded here -->
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="viewapplicants.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

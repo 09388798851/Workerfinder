@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Employer Messages</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="messages.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Employer</small></div>
+    <nav>
+      <a href="dashboard.html"><i data-lucide="home"></i> Dashboard</a>
+      <a href="postjob.html"><i data-lucide="plus-circle"></i> Post a Job</a>
+      <a href="applicants.html"><i data-lucide="users"></i> View Applicants</a>
+      <a href="map.html"><i data-lucide="map-pin"></i> GIS Map</a>
+      <a href="messages.html" class="active"><i data-lucide="message-circle"></i> Messages</a>
+      <a href="settings.html"><i data-lucide="settings"></i> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Messages</h2>
+      <div class="messages">
+        <div class="chat-list">
+          <div class="chat-item">Worker A</div>
+          <div class="chat-item">Worker B</div>
+          <div class="chat-item">Worker C</div>
+        </div>
+        <div class="chat-window">
+          <div class="chat-header">Select a conversation</div>
+          <div class="chat-body">
+            <div class="msg-bubble from-them">Hello Sir, I applied for the Carpenter position.</div>
+            <div class="msg-bubble from-me">Thanks, I’ll review it soon.</div>
+          </div>
+          <div class="chat-input">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="messages.js"></script>
+</body>
+</html>

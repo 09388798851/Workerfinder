@@ -1,0 +1,126 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --muted: #9ca3af;
+  --text: #f3f4f6;
+  --accent: #3b82f6;
+  --danger: #ef4444;
+  --hover: #1f2937;
+  --radius: 14px;
+  --sidebar-w: 270px;
+}
+
+* { box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 19px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  min-height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--panel);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 21px;
+  color: var(--text);
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  transition: 0.2s;
+}
+
+.sidebar nav a:hover {
+  background: var(--hover);
+}
+
+.sidebar nav a.active {
+  background: rgba(59, 130, 246, .2);
+  border: 2px solid var(--accent);
+}
+
+.sidebar nav i {
+  width: 26px;
+  height: 26px;
+}
+
+/* Content */
+.content {
+  padding: 30px;
+}
+
+.panel {
+  background: rgba(17, 24, 39, .7);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);
+}
+
+/* Settings Form */
+.settings label {
+  display: block;
+  margin: 14px 0 6px;
+  font-size: 18px;
+}
+
+.settings input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.settings button {
+  margin-top: 15px;
+  padding: 14px 20px;
+  font-size: 19px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.settings button.save {
+  background: var(--accent);
+  color: #fff;
+}
+
+.settings button.logout {
+  background: var(--danger);
+  color: #fff;
+}
+
+.settings button:hover {
+  opacity: 0.9;
+}

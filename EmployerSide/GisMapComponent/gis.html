@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Employer GIS Map</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="gis.css">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Employer</small></div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="postjob.html">Post a Job</a>
+      <a href="applicants.html">Applicants</a>
+      <a href="gis-map.html" class="active">GIS Map</a>
+      <a href="messages.html">Messages</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel section">
+      <h2>GIS Map of Workers</h2>
+      <div id="map" class="map"></div>
+    </div>
+  </main>
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- External JS -->
+<script src="gis.js"></script>
+</body>
+</html>

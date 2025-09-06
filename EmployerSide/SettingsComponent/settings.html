@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkerFinder — Employer Settings</title>
+  <link rel="stylesheet" href="settings.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Employer</small></div>
+    <nav>
+      <a href="#"><i data-lucide="home"></i> Dashboard</a>
+      <a href="#"><i data-lucide="plus-circle"></i> Post a Job</a>
+      <a href="#"><i data-lucide="users"></i> View Applicants</a>
+      <a href="#"><i data-lucide="map-pin"></i> GIS Map</a>
+      <a href="#"><i data-lucide="message-circle"></i> Messages</a>
+      <a href="#" class="active"><i data-lucide="settings"></i> Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Settings</h2>
+      <form class="settings">
+        <label for="name">Company Name</label>
+        <input type="text" id="name" value="ABC Construction">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" value="employer@email.com">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" value="********">
+
+        <button type="button" class="save">Save Changes</button>
+        <button type="button" class="logout" id="logoutBtn">Logout</button>
+      </form>
+    </div>
+  </main>
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>

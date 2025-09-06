@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — Employer Dashboard</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>Employer</small></div>
+    <button class="btn active"><i data-lucide="home"></i><span>Dashboard</span></button>
+    <a href="postjob.html" class="btn"><i data-lucide="plus-circle"></i><span>Post a Job</span></a>
+    <a href="applicants.html" class="btn"><i data-lucide="users"></i><span>View Applicants</span></a>
+    <a href="map.html" class="btn"><i data-lucide="map-pin"></i><span>GIS Map</span></a>
+    <a href="messages.html" class="btn"><i data-lucide="message-circle"></i><span>Messages</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Dashboard Section -->
+    <div class="panel section">
+      <h2>Welcome, Employer!</h2>
+      <p>You have <b>3 active job posts</b>.</p>
+      <p><b>12 applicants</b> are waiting for review.</p>
+      <p>Check messages for inquiries from workers.</p>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="dashboard.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>
