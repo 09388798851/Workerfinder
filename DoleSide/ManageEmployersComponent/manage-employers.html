@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — DOLE Manage Employers</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="manage-employers.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br>
+      <small style="color:var(--muted);font-size:18px;">DOLE</small>
+    </div>
+    <a href="#" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="#" class="btn"><i data-lucide="check-circle"></i><span>Verification</span></a>
+    <a href="#" class="btn"><i data-lucide="user"></i><span>Manage Workers</span></a>
+    <a href="#" class="btn active"><i data-lucide="briefcase"></i><span>Manage Employers</span></a>
+    <a href="#" class="btn"><i data-lucide="bar-chart-2"></i><span>Analytics & Reports</span></a>
+    <a href="#" class="btn"><i data-lucide="message-square"></i><span>User Feedback</span></a>
+    <a href="#" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Manage Employers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABC Construction</td>
+            <td>abc@email.com</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>FarmCo</td>
+            <td>farm@email.com</td>
+            <td>Suspended</td>
+          </tr>
+          <tr>
+            <td>BuildRight Inc.</td>
+            <td>buildright@email.com</td>
+            <td>Active</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="manage-employers.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

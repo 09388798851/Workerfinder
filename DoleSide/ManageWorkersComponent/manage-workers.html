@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — DOLE Manage Workers</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="manage-workers.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      WorkerFinder<br>
+      <small>DOLE</small>
+    </div>
+    <a href="#" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="#" class="btn"><i data-lucide="check-circle"></i><span>Verification</span></a>
+    <a href="#" class="btn active"><i data-lucide="user"></i><span>Manage Workers</span></a>
+    <a href="#" class="btn"><i data-lucide="briefcase"></i><span>Manage Employers</span></a>
+    <a href="#" class="btn"><i data-lucide="bar-chart-2"></i><span>Analytics & Reports</span></a>
+    <a href="#" class="btn"><i data-lucide="message-square"></i><span>User Feedback</span></a>
+    <a href="#" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel section">
+      <h2>Manage Workers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Skill</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pedro Reyes</td>
+            <td>Electrician</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>Liza Cruz</td>
+            <td>Helper</td>
+            <td>Suspended</td>
+          </tr>
+          <tr>
+            <td>Mark Dizon</td>
+            <td>Welder</td>
+            <td>Active</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="manage-workers.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

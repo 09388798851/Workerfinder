@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — DOLE Dashboard</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>DOLE</small></div>
+    <a href="dole.html" class="btn active"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="verification.html" class="btn"><i data-lucide="check-circle"></i><span>Verification</span></a>
+    <a href="workers.html" class="btn"><i data-lucide="user"></i><span>Manage Workers</span></a>
+    <a href="employers.html" class="btn"><i data-lucide="briefcase"></i><span>Manage Employers</span></a>
+    <a href="analytics.html" class="btn"><i data-lucide="bar-chart-2"></i><span>Analytics & Reports</span></a>
+    <a href="feedback.html" class="btn"><i data-lucide="message-square"></i><span>User Feedback</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel section">
+      <h2>DOLE Dashboard</h2>
+      <p><b>150</b> Workers registered</p>
+      <p><b>40</b> Employers registered</p>
+      <p><b>35</b> Pending verifications</p>
+      <p><b>20</b> Feedback reports</p>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="dashboard.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

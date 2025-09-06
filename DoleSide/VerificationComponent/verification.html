@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — DOLE Verification</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="verification.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br><small>DOLE</small></div>
+    <a href="dashboard.html" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="verification.html" class="btn active"><i data-lucide="check-circle"></i><span>Verification</span></a>
+    <a href="workers.html" class="btn"><i data-lucide="user"></i><span>Manage Workers</span></a>
+    <a href="employers.html" class="btn"><i data-lucide="briefcase"></i><span>Manage Employers</span></a>
+    <a href="analytics.html" class="btn"><i data-lucide="bar-chart-2"></i><span>Analytics</span></a>
+    <a href="feedback.html" class="btn"><i data-lucide="message-square"></i><span>User Feedback</span></a>
+    <a href="settings.html" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Verification</h2>
+      <p>Review worker and employer accounts before approval.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Dela Cruz</td>
+            <td>Worker</td>
+            <td>Pending</td>
+            <td>
+              <button class="accept-btn">Approve</button>
+              <button class="reject-btn">Reject</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Maria Santos</td>
+            <td>Employer</td>
+            <td>Pending</td>
+            <td>
+              <button class="accept-btn">Approve</button>
+              <button class="reject-btn">Reject</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="verification.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

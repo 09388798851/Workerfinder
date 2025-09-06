@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — DOLE Settings</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="dole-settings.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">WorkerFinder<br>
+      <small class="subtitle">DOLE</small>
+    </div>
+    <a href="#" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="#" class="btn"><i data-lucide="check-circle"></i><span>Verification</span></a>
+    <a href="#" class="btn"><i data-lucide="user"></i><span>Manage Workers</span></a>
+    <a href="#" class="btn"><i data-lucide="briefcase"></i><span>Manage Employers</span></a>
+    <a href="#" class="btn"><i data-lucide="bar-chart-2"></i><span>Analytics & Reports</span></a>
+    <a href="#" class="btn"><i data-lucide="message-square"></i><span>User Feedback</span></a>
+    <a href="#" class="btn active"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Settings</h2>
+      <form class="settings">
+        <label for="name">Admin Name</label>
+        <input type="text" id="name" value="DOLE Admin">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" value="dole@email.com">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" value="********">
+        
+        <button type="button" class="save">Save Changes</button>
+        <button type="button" class="logout">Logout</button>
+      </form>
+    </div>
+  </main>
+</div>
+
+<!-- JS -->
+<script src="dole-settings.js"></script>
+</body>
+</html>

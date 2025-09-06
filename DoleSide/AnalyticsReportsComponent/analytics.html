@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkerFinder — DOLE Analytics</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="analytics.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      WorkerFinder<br>
+      <small>DOLE</small>
+    </div>
+    <a href="#" class="btn"><i data-lucide="home"></i><span>Dashboard</span></a>
+    <a href="#" class="btn"><i data-lucide="check-circle"></i><span>Verification</span></a>
+    <a href="#" class="btn"><i data-lucide="user"></i><span>Manage Workers</span></a>
+    <a href="#" class="btn"><i data-lucide="briefcase"></i><span>Manage Employers</span></a>
+    <a href="#" class="btn active"><i data-lucide="bar-chart-2"></i><span>Analytics & Reports</span></a>
+    <a href="#" class="btn"><i data-lucide="message-square"></i><span>User Feedback</span></a>
+    <a href="#" class="btn"><i data-lucide="settings"></i><span>Settings</span></a>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="panel">
+      <h2>Analytics & Reports</h2>
+      <p>Total Jobs Posted: <b>120</b></p>
+      <p>Total Applications: <b>350</b></p>
+      <p>Active Workers: <b>140</b></p>
+      <p>Active Employers: <b>35</b></p>
+      <p>Pending Verifications: <b>22</b></p>
+    </div>
+  </main>
+</div>
+
+<!-- External JS -->
+<script src="analytics.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>
